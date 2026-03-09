@@ -41,6 +41,14 @@ nav a:hover {
   color: #4f46e5;
 }
 
+/* Burger icon */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
 /* Hero */
 .hero-section {
   text-align: center;
@@ -195,15 +203,22 @@ footer {
   }
 }
 
-@media (max-width: 480px) {
-  nav {
-    flex-direction: column;
-    gap: 10px;
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: block;
   }
 
   nav ul {
+    display: none;
     flex-direction: column;
-    align-items: center;
+    background: #222;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  nav ul.show {
+    display: flex;
   }
 
   .profile-pic {
