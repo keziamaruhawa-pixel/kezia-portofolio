@@ -1,0 +1,273 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background: #f5f5f5;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #222;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #4f46e5;
+}
+
+/* hero */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.profile-pic {
+  width: 130px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  animation: bounce 3s infinite;
+}
+
+/* section */
+.section {
+  padding: 50px 30px;
+}
+
+.gray {
+  background: #eaeaea;
+}
+
+/* cards */
+.card-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  width: 220px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.05);
+}
+
+/* skills */
+.skills span {
+  display: inline-block;
+  background: #4f46e5;
+  color: white;
+  padding: 6px 10px;
+  margin: 5px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.skills span:hover {
+  background: #222;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #222;
+  color: white;
+}
+
+.socials a {
+  font-size: 26px;
+  margin: 0 10px;
+  color: white;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+  color: #4f46e5;
+}
+
+/* animations */
+.fade-in {
+  animation: fadeIn 1.5s ease-in;
+}
+
+.slide-up {
+  animation: slideUp 1.5s ease-out;
+}
+
+.btn-animate {
+  padding: 10px 20px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn-animate:hover {
+  background: #222;
+  transform: translateY(-3px);
+}
+
+/* keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* responsive mobile */
+@media(max-width:600px){
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* initial hidden state */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+/* visible state */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Hero/Profile */
+.hero-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* bikin bulat */
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* Projects */
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap; /* biar otomatis turun ke baris baru */
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project-pic {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+/* Default: desktop/tablet */
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.project-pic {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
