@@ -428,3 +428,26 @@ footer.fade-in {
   from { transform: translateY(30px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
+.project-links {
+  margin-top: 10px;
+}
+
+.project-links .btn {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 15px;
+  background: #4f46e5; /* warna ungu */
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  font-weight: 500;
+}
+
+.project-links .btn i {
+  margin-right: 6px; /* jarak ikon dengan teks */
+}
+
+.project-links .btn:hover {
+  background: #9333ea; /* warna hover lebih cerah */
+}
