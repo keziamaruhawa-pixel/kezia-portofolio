@@ -1,136 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Kezia Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <!-- link CSS -->
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kezia Maruhawa | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
-
 <body>
 
-  <!-- ===== NAVBAR ===== -->
+<!-- NAVBAR -->
 <nav>
-  <h2>Kezia</h2>
-  <ul id="nav-links">
+  <span class="nav-name">Kezia Larita Maruhawa</span>
+  <ul class="nav-links">
     <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
     <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
- <!-- ===== HERO ===== -->
-  <section id="hero" class="hero-section">
-    <div class="hero-content">
-      <img src="images/profile.jpg" class="profile-pic" alt="Profile Picture">
-      <h1>Hi, I'm Kezia</h1>
-      <p>Computer Science Student | Web Development, Database Design & Cyber Security Enthusiast</p>
+
+<!-- HERO -->
+<div id="hero">
+  <img src="images/profile.jpg" class="hero-photo" alt="Kezia"/>
+  <div class="hero-text">
+    <h1>Hi, I'm Kezia 👋</h1>
+    <p class="tagline">Computer Science Student · Web Developer · Cyber Security Enthusiast</p>
+    <p>I'm a CS student at President University who enjoys building websites, designing databases, and learning about cyber security. I like working on real projects and figuring things out hands-on.</p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-dark">See my projects</a>
+      <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      <a href="files/Kezia_CV.pdf" class="btn btn-ghost" download>Download CV ↓</a>
     </div>
-    <!-- Popup -->
-<div class="popup">
-  <div class="popup-content">
-    <h2>Hello, I'm Kezia 👋</h2>
-    <p>Welcome to my portfolio! 🚀<br>
-       I’m a Computer Science student passionate about Web Development, Database Design, and Cyber Security.<br>
-       Feel free to explore my projects and connect with me!</p>
-    <button onclick="closePopup()">Explore Now</button>
-  </div>
-</div>
-  </section>
-
-  <!-- ===== ABOUT ===== -->
-  <section id="about" class="section reveal">
-    <h2>About Me</h2>
-    <p>
-      I am a Computer Science student at President University with strong
-      interests in Web Development, Database Design, and Cyber Security.
-    </p>
-    <p>
-      Saya mahasiswa Computer Science yang suka bikin website, belajar database,
-      dan mengembangkan skill programming secara mandiri.
-    </p>
-  </section>
-
-  <!-- ===== PROJECTS ===== -->
-  <section id="projects" class="section gray reveal">
-    <h2>Projects</h2>
-    <div class="card-container">
-
-      <div class="card">
-  <img src="images/jastip-screenshot.png" class="project-pic" alt="Jastip Screenshot">
-  <h3>Jastip Website</h3>
-  <p>Simple ordering website deployed to Vercel</p>
-  <div class="project-links">
-    <a href="https://github.com/keziamaruhawa-pixel/jastip-web" target="_blank" class="btn">
-      <i class="fab fa-github"></i> View Source Code
-    </a>
-    <a href="https://jastip-web.vercel.app/" target="_blank" class="btn">
-      <i class="fas fa-external-link-alt"></i> Live Demo
-    </a>
   </div>
 </div>
 
-      <div class="card">
-        <img src="images/dimsum-screenshot.png" class="project-pic" alt="Dimsum Screenshot">
+<hr/>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-header reveal"><h2>About</h2></div>
+  <div class="about-grid">
+    <div class="about-body reveal">
+      <p>I'm a <strong>Computer Science student at President University</strong> with a focus on Web Development, Database Design, and Cyber Security.</p>
+      <p>I enjoy building things that actually work — from simple landing pages to full ordering systems with a backend. I learn best by doing, so most of what I know comes from building real projects.</p>
+      <p>Outside of code, I'm always looking for new things to learn, whether that's a new framework, a new tool, or just a better way to do something I've already done before.</p>
+    </div>
+    <div class="about-details reveal">
+      <div class="detail-item">
+        <div class="label">University</div>
+        <div class="value">President University</div>
+      </div>
+      <div class="about-details reveal">
+      <div class="detail-item">
+        <div class="label">High School</div>
+        <div class="value">SMA 3 SOLOK</div>
+      </div>
+      <div class="detail-item">
+        <div class="label">Major</div>
+        <div class="value">Computer Science</div>
+      </div>
+      <div class="detail-item">
+        <div class="label">Focus</div>
+        <div class="value">Web Dev · Database · Cyber Security</div>
+      </div>
+      <div class="detail-item">
+        <div class="label">Status</div>
+        <div class="value">Open to internship 🟢</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr/>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="section-header reveal"><h2>Education</h2></div>
+  <div class="reveal">
+    <div class="edu-item">
+      <div class="edu-dot"></div>
+      <div class="edu-content">
+        <h3>President University — Bachelor of Computer Science</h3>
+        <p>Relevant coursework: Web Development, Database Design, Cyber Security fundamentals</p>
+        <span class="period">2025 – Present</span>
+        <div class="reveal">
+    <div class="edu-item">
+      <div class="edu-dot"></div>
+      <div class="edu-content">
+        <h3>SMA 3 SOLOK</h3>
+        <p>Relevant coursework: Mathematics, Physics, Chemistry</p>
+        <span class="period">2023 – 2025</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr/>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-header reveal"><h2>Skills</h2></div>
+  <div class="skills-wrap reveal" id="skillsWrap"></div>
+  <div class="tools-row reveal">
+    <span class="tool-chip"><i class="fab fa-git-alt"></i> Git</span>
+    <span class="tool-chip"><i class="fab fa-github"></i> GitHub</span>
+    <span class="tool-chip">Vercel</span>
+    <span class="tool-chip">VS Code</span>
+    <span class="tool-chip">UI/UX Design</span>
+  </div>
+</section>
+
+<hr/>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-header reveal"><h2>Projects</h2></div>
+  <div class="projects-list">
+
+    <div class="project-card reveal">
+      <img src="images/jastip-screenshot.png" class="project-thumb" alt="Jastip"/>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Vercel</span>
+        </div>
+        <h3>Jastip Website</h3>
+        <p>A personal shopper (jasa titip) ordering platform built with vanilla HTML, CSS, and JavaScript. Clean interface with a simple ordering flow, deployed on Vercel.</p>
+      </div>
+      <div class="project-links">
+        <a href="https://jastip-web.vercel.app/" class="proj-link" target="_blank">Live Demo →</a>
+        <a href="https://github.com/keziamaruhawa-pixel/jastip-web" class="proj-link" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <img src="images/dimsum-screenshot.png" class="project-thumb" alt="Dimsum Delivery"/>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Responsive</span>
+        </div>
         <h3>Dimsum Delivery</h3>
-        <p>Food ordering website with responsive design</p>
-        <div class="project-links">
-           <a href= "https://github.com/keziamaruhawa-pixel/dimsum-delivery" target="_blank" class="btn">
-            <i class="fab fa-github"></i> View Source Code
-          </a>
-          <a href="https://dimsum-delivery.vercel.app/" target="_blank" class="btn">
-            <i class="fas fa-external-link-alt"></i> View Project
-          </a>
-        </div>
+        <p>Food ordering website with full menu, pricing, and fully responsive layout. Designed the UI/UX from scratch and deployed on Vercel.</p>
       </div>
-
-       <div class="card">
-        <img src="images/stack web-screenshot.png" class="project-pic" alt="Stack Web Screenshot">
-        <h3>Stack Web</h3>
-        <p>Stack Café Website is a collaborative team project that showcases a modern café platform with responsive design, menu ordering, and user login features. Built using HTML, CSS, JavaScript, and MySQL, and deployed on Vercel.</p>
-        <div class="project-links">
-           <a href= "https://github.com/keziamaruhawa-pixel/stack-cafe" target="_blank" class="btn">
-            <i class="fab fa-github"></i> View Source Code
-          </a>
-          <a href="https://stack-cafe.vercel.app/" target="_blank" class="btn">
-            <i class="fas fa-external-link-alt"></i> View Project
-          </a>
-        </div>
+      <div class="project-links">
+        <a href="https://dimsum-delivery.vercel.app/" class="proj-link" target="_blank">Live Demo →</a>
+        <a href="https://github.com/keziamaruhawa-pixel/dimsum-delivery" class="proj-link" target="_blank">GitHub</a>
       </div>
-
-
     </div>
-  </section>
 
-  <!-- ===== SKILLS ===== -->
-  <section id="skills" class="section reveal">
-    <h2>Skills</h2>
-    <div class="skills">
-      <span><i class="fab fa-html5"></i> HTML</span>
-      <span><i class="fab fa-css3-alt"></i> CSS</span>
-      <span><i class="fab fa-js"></i> JavaScript</span>
-      <span><i class="fab fa-php"></i> PHP</span>
-      <span><i class="fas fa-database"></i> MySQL</span>
+    <div class="project-card reveal">
+      <img src="images/stack web-screenshot.png" class="project-thumb" alt="Stack Cafe"/>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">MySQL</span>
+          <span class="tag team">Team Project</span>
+        </div>
+        <h3>Stack Café</h3>
+        <p>Collaborative café platform with menu ordering, user login, and responsive design. Built with a MySQL backend as part of a small dev team, deployed on Vercel.</p>
+      </div>
+      <div class="project-links">
+        <a href="https://stack-cafe.vercel.app/" class="proj-link" target="_blank">Live Demo →</a>
+        <a href="https://github.com/keziamaruhawa-pixel/stack-cafe" class="proj-link" target="_blank">GitHub</a>
+      </div>
     </div>
-  </section>
 
- <!-- ===== FOOTER ===== -->
-<footer id="contact" class="fade-in">
-  <p>Connect with me</p>
-  <div class="socials">
-    <a href="https://www.instagram.com/kiy0masa__" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.linkedin.com/in/kezia-maruhawa-69a5a5372" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com/keziamaruhawa-pixel" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="mailto:keziamaruhawa@gmail.com" target="_blank"><i class="fab fa-google"></i></a>
   </div>
-  <p>© 2026 Kezia</p>
-</footer>
+</section>
 
-  <!-- link JS -->
-  <script src="script.js"></script>
+<hr/>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-header reveal"><h2>Contact</h2></div>
+  <p class="contact-desc reveal">Feel free to reach out — whether it's about an internship, a project, or just to say hi!</p>
+  <div class="contact-row reveal">
+    <a href="mailto:keziamaruhawa@gmail.com" class="contact-chip">
+      <i class="fas fa-envelope"></i> keziamaruhawa@gmail.com
+    </a>
+    <a href="https://www.linkedin.com/in/kezia-maruhawa-69a5a5372" class="contact-chip" target="_blank">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    <a href="https://github.com/keziamaruhawa-pixel" class="contact-chip" target="_blank">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+    <a href="https://www.instagram.com/kiy0masa__" class="contact-chip" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+  </div>
+</section>
+
+<footer>© 2026 Kezia Maruhawa</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
